@@ -3,6 +3,7 @@ import React from "react";
 const Navbar = (props) => {
         return (
             <div style={styles.nav}>
+                <h1 style={styles.title}>Rado Switzerland</h1>
                 <div style={styles.CartIconContainer}>
                     <img style={styles.CartIcon} src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="cart-icon" />
                     <span style={styles.CartCount}>{props.count}</span>
@@ -16,11 +17,15 @@ const styles = {
         height:32,
         marginRight:20
     },
+    title :{
+        marginLeft:30,
+        color:'white'
+    },
     nav:{
         height:70,
-        background:'#4267b2',
+        background:'red',
         display:'flex',
-        justifyContent:'flex-end',
+        justifyContent:'space-between',
         alignItems:'center'
     },
     CartIconContainer:{

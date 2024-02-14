@@ -4,7 +4,7 @@ import CartItem from "./CartItem";
 const Cart = (props) => {
         const { products } = props;
         return(
-            <div className="cart">
+            <div className="cart" style={styles.cart}>
                 {products.map((product) => {
                   return  (
                   <CartItem
@@ -19,5 +19,16 @@ const Cart = (props) => {
             </div>
         )
 }
+
+const styles = {
+  cart:{
+    display:'flex',
+    flexDirection:'row',
+    flexWrap:'wrap',
+    justifyContent:'space-around',
+    alignItems:'center'
+  }
+}
+
 
 export default Cart

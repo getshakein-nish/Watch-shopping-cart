@@ -119,7 +119,7 @@ const handleDeleteProduct = (id) => {
       onDeleteProduct ={handleDeleteProduct}
       />
       {loading  && <h1>Loading Products...</h1>}
-      <div style={{padding:10,fontSize:20}} >TOTAL: {getCartTotal()}</div>
+      <div style={{padding:10,fontSize:20,background:'yellow'}} ><span style={{fontWeight:700, color:'red'}}>TOTAL: </span> {getCartTotal()}</div>
     </div>
   )
 }
